@@ -1,0 +1,208 @@
+---
+import Button from "../components/button.astro";
+import Projects from "../components/home/projects.astro";
+import Separator from "../components/home/separator.astro";
+import Writings from "../components/home/writings.astro";
+import Layout from "../layouts/main.astro";
+import translations from "../locales/translations.ts";
+
+const currentLocale = Astro.currentLocale || 'en';
+---
+
+<Layout title="Portfolio">
+  <div
+    class="relative z-20 w-full max-w-4xl mx-auto mt-16 px-7 md:mt-24 lg:mt-32 xl:px-0"
+  >
+    <div class="flex flex-col items-center md:flex-row">
+      <div class="relative w-full md:w-1/2">
+        <h1
+          class="mb-5 text-4xl font-bold leading-tight md:text-4xl lg:text-6xl dark:text-white"
+        >
+          {translations[currentLocale].home.title}
+        </h1>
+        <p class="mb-6 text-base text-neutral-600 dark:text-neutral-400">
+          {translations[currentLocale].home.subtitle} <br
+            class="hidden lg:block"
+          />
+        </p>
+        <p class="mb-2 font-semibold text-neutral-800 dark:text-neutral-200">
+          {translations[currentLocale].home.help}
+        </p>
+        <ul
+          class="py-2 space-y-[3px] text-sm list-disc list-inside text-neutral-500 dark:text-neutral-400"
+        >
+        {translations[currentLocale].home.skills.map((skill: string)=> (
+          <li>{skill}</li>
+        ))}
+        </ul>
+        <Button text={translations[currentLocale].home.followMe} link="https://github.com/SuzanneOngCodes" isExternalWebsite/>
+      </div>
+      <div
+        class="relative justify-end hidden w-full mt-10 md:flex md:pl-10 md:w-1/2 md:mt-0 md:translate-y-4 xl:translate-y-0"
+      >
+        <div class="relative z-50 w-full">
+          <div class="relative z-30 px-10">
+            <svg id="plushie" width="300" height="420" viewBox="0 0 300 420">
+              <!-- Hair (Back) -->
+              <path d="M60,110 Q210,-10 240,110 Q250,250 150,300 Q50,250 60,110 Z" fill="#3b2a2a"/>
+              <!-- Head -->
+              <circle cx="150" cy="140" r="75" fill="#f2d6c9"/>
+              
+              <!-- Eyes OPEN -->
+              <g id="eyesOpen">
+                <circle cx="120" cy="130" r="22" fill="white"/>
+                <circle cx="180" cy="130" r="22" fill="white"/>
+
+                <circle id="eyeL" cx="120" cy="130" r="10" fill="#222"/>
+                <circle id="eyeR" cx="180" cy="130" r="10" fill="#222"/>
+              </g>
+
+              <!-- Eyes CLOSED -->
+              <g id="eyesClosed" style="display:none;">
+                <path d="M100 130 Q120 145 140 130" stroke="black" stroke-width="4" fill="none" stroke-linecap="round"/>
+                <path d="M160 130 Q180 145 200 130" stroke="black" stroke-width="4" fill="none" stroke-linecap="round"/>
+              </g>
+
+              <!-- Hair (Front) -->
+              <path d="M60 110 A70 60 0 0 1 230 110" fill="#3b2a2a" transform="rotate(-15 150 120)" />
+
+              <!-- Blush -->
+              <circle cx="95" cy="160" r="10" fill="#f4a5a5" opacity="0.5"/>
+              <circle cx="205" cy="160" r="10" fill="#f4a5a5" opacity="0.5"/>
+
+              <!-- Smile -->
+              <path d="M130 170 Q150 190 170 170"
+                    stroke="#f4a5a5"
+                    stroke-width="3"
+                    fill="none"
+                    stroke-linecap="round"/>
+
+              <!-- Body -->
+              <defs>
+                <pattern id="floralPattern" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+                  
+                  <!-- Base background -->
+                  <rect width="40" height="40" fill="#f9bf90"/>
+                  
+                  <!-- Flower 1 -->
+                  <circle cx="10" cy="10" r="4" fill="#ffd6e0"/>
+                  <circle cx="10" cy="10" r="2" fill="#ff8fab"/>
+                  
+                  <!-- Flower 2 -->
+                  <circle cx="30" cy="25" r="4" fill="#ffe8a3"/>
+                  <circle cx="30" cy="25" r="2" fill="#ffc94d"/>
+                  
+                  <!-- Small leaves -->
+                  <ellipse cx="20" cy="15" rx="3" ry="1.5" fill="#7ed957" transform="rotate(30 20 15)"/>
+                  <ellipse cx="15" cy="30" rx="3" ry="1.5" fill="#7ed957" transform="rotate(-30 15 30)"/>
+                  
+                </pattern>
+              </defs>
+
+              <!-- Body with Floral Pattern -->
+              <rect x="90" y="220" width="120" height="130" rx="30" fill="url(#floralPattern)"/> 
+              
+              <!-- Laptop Screen -->
+              <rect x="35" y="210" width="90" height="60" rx="6" fill="#37474f"/>
+
+              <!-- Screen Glow -->
+              <rect x="40" y="215" width="80" height="50" rx="4" fill="#90caf9" opacity="0.6"/>
+
+              <!-- Screen Text -->
+              <text x="80" y="245" text-anchor="middle" fill="white" font-size="16" font-family="Arial, sans-serif" font-weight="bold"> Hi! </text>
+              
+              <!-- Laptop Base -->
+              <rect x="35" y="270" width="90" height="50" rx="8" fill="#cfd8dc"/>
+
+              <!-- Keyboard Keys -->
+              <g fill="#b0bec5">
+                <!-- Row 1 -->
+                <rect x="45" y="280" width="10" height="6" rx="1"/>
+                <rect x="60" y="280" width="10" height="6" rx="1"/>
+                <rect x="75" y="280" width="10" height="6" rx="1"/>
+                <rect x="90" y="280" width="10" height="6" rx="1"/>
+                <rect x="105" y="280" width="10" height="6" rx="1"/>
+
+                <!-- Row 2 -->
+                <rect x="50" y="290" width="10" height="6" rx="1"/>
+                <rect x="65" y="290" width="10" height="6" rx="1"/>
+                <rect x="80" y="290" width="10" height="6" rx="1"/>
+                <rect x="95" y="290" width="10" height="6" rx="1"/>
+
+                <!-- Row 3 -->
+                <rect x="55" y="300" width="10" height="6" rx="1"/>
+                <rect x="70" y="300" width="10" height="6" rx="1"/>
+                <rect x="85" y="300" width="10" height="6" rx="1"/>
+              </g>
+              
+              <!-- Trackpad -->
+               <rect x="65" y="310" width="30" height="8" rx="2" fill="#b0bec5"/>
+            </svg>
+          </div>
+          <div
+            class="absolute bottom-0 right-0 z-20 w-full h-full lg:h-[420px] translate-x-0 -translate-y-px border border-dashed rounded-2xl bg-gradient-to-r dark:from-neutral-950 dark:via-black dark:to-neutral-950 from-white via-neutral-50 to-white border-neutral-300 dark:border-neutral-700"
+          >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <Separator text={translations[currentLocale].home.projects} />
+  <Projects />
+  <Separator text={translations[currentLocale].home.writing} />
+  <Writings />
+</Layout>
+
+<script>
+  let darkMode = localStorage.getItem("dark_mode") && localStorage.getItem("dark_mode") === "true";
+  const eyeL = document.getElementById("eyeL");
+  const eyeR = document.getElementById("eyeR");
+  const eyesOpen = document.getElementById("eyesOpen");
+  const eyesClosed = document.getElementById("eyesClosed");
+  const svg = document.getElementById("plushie");
+
+  // Toggle eyes based on mode
+  function updateEyes() {
+    if (darkMode) {
+      eyesOpen.style.display = "none";
+      eyesClosed.style.display = "block";
+    } else {
+      eyesOpen.style.display = "block";
+      eyesClosed.style.display = "none";
+    }
+  }
+
+  updateEyes();
+
+  // Cursor tracking (only when eyes are open)
+  document.addEventListener("mousemove", (e) => {
+    if (darkMode) return;
+
+    const rect = svg.getBoundingClientRect();
+    const mouseX = e.clientX - rect.left;
+    const mouseY = e.clientY - rect.top;
+
+    moveEye(eyeL, 120, 130, mouseX, mouseY);
+    moveEye(eyeR, 180, 130, mouseX, mouseY);
+  });
+
+  function moveEye(eye: HTMLElement, cx: number, cy: number, mx: number, my: number) {
+    const dx = mx - cx;
+    const dy = my - cy;
+    const angle = Math.atan2(dy, dx);
+
+    const maxMove = 6;
+    const x = cx + Math.cos(angle) * maxMove;
+    const y = cy + Math.sin(angle) * maxMove;
+
+    eye.setAttribute("cx", x.toString());
+    eye.setAttribute("cy", y.toString());
+  }
+
+  // Optional: toggle with click for demo
+  document.body.addEventListener("click", () => {
+    darkMode = !darkMode;
+    updateEyes();
+  });
+</script>

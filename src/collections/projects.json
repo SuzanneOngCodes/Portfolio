@@ -1,0 +1,80 @@
+[
+  {
+    "name": "CPU computation time optimization for regression models",
+    "technologies": ["Python", "R", "irace"],
+    "date": "July 2021 · November 2021",
+    "description": {
+      "en": "Using a automated algorithm configuration tool named irace, this research aims to make comparison on the CPU computational time and quality of algorithms for genetic programming, random forest regressor and support vector regressor for over 50 datasets from Penn Machine Learning Benchmarks (PMLB).",
+      "zh": "负责会议记录的整理，关于性别投资差距的信息调研，并向客户展示团队的发现和启发性的想法。使用一个名为irace的自动化算法配置工具，这项研究旨在比较遗传编程、随机森林回归器和支持向量回归器在超过50个来自宾州机器学习基准（PMLB）的数据集上的CPU计算时间和算法质量。"
+    },
+    "preview": "/assets/images/projects/irace.webp",
+    "image": "/assets/images/projects/irace.webp",
+    "url": "https://github.com/SuzanneOngCodes/irace-on-symbolic-regression-algorithms",
+    "category": "AI/ML"
+  },
+  {
+    "name": "See Adelaide Travel App",
+    "technologies": ["React Native", "Expo"],
+    "date": "December 2020 · June 2021",
+    "description": {
+      "en": "A travel app for tourists in Adelaide, South Australia. The app provides information about local attractions, restaurants, and events, as well as a map feature to help users navigate the city.",
+      "zh": "一款为南澳大利亚阿德莱德的游客设计的旅行应用程序。该应用程序提供有关当地景点、餐厅和活动的信息，以及一个地图功能，帮助用户导航城市。"
+    },
+    "preview": "/assets/images/projects/SeeAdelaide.webp",
+    "image": "/assets/images/projects/SeeAdelaide.webp",
+    "url": "https://github.com/cstho/seeadelaide",
+    "category": "App Development"
+  },
+  {
+    "name": "Airbnb Occupancy Rate Analysis",
+    "technologies": ["Python"],
+    "date": "June 2020 · November 2020",
+    "description": {
+      "en": "A website to evaluate any adverse impact from the pandemic towards Airbnb by compiling csv datasets from Inside Airbnb. It is attached with interactive visualizations that are created using Python to enhance user’s experience. Use a laptop/PC to try it out!",
+      "zh": "一个用于评估疫情对Airbnb的影响的网站。 通过从Inside Airbnb编译csv数据集。它附带了使用Python创建的交互式可视化，以增强用户的体验。"
+    },
+    "preview": "/assets/images/projects/airbnb.webp",
+    "image": "/assets/images/projects/airbnbImg.webp",
+    "url": "https://suzanneongcodes.github.io/Airbnb_Project_Research/",
+    "category": "Web Development"
+  },
+  {
+    "name": "Trello Simulator",
+    "technologies": ["C++"],
+    "date": "August 2020 · October 2020",
+    "description": {
+      "en": "A program that simulates Trello, a well-known project management app, and its functionality to record the user’s tasks and allocate them to to- do list, in progress list and completed list based on dates. It is constructed in a group of 2 to plan, code, execute and test the program. A rewards system is implemented as well based on the requirements elicited from peers and tutors.",
+      "zh": "一个模拟Trello的程序，Trello是一个知名的项目管理应用程序，其功能是记录用户的任务，并根据日期将它们分配到待办列表、进行中列表和已完成列表中。它是在一个由2人组成的小组中构建的，以计划、编码、执行和测试程序。根据从同学和导师那里收集的需求，还实现了一个奖励系统。"
+    },
+    "preview": "/assets/images/projects/trello.webp",
+    "image": "/assets/images/projects/trello.webp",
+    "url": "https://github.com/SuzanneOngCodes/Trello-Simulation",
+    "category": "Project"
+  },
+  {
+    "name": "Minesweeper - MATLAB version",
+    "technologies": ["MATLAB"],
+    "date": "April 2020 · May 2020",
+    "description": {
+      "en": "A game that allow user to find the treasure. Player would have unlimited tries at a given range until the bomb is detected. An imaginary 2D grid is also added to help player in visualizing the location",
+      "zh": "一个寻找宝藏的游戏。玩家在范围内有无限次尝试，直到检测到炸弹。还添加了一个虚拟的二维网格，以帮助玩家可视化位置。"
+    },
+    "preview": "/assets/images/projects/minesweep.webp",
+    "image": "/assets/images/projects/bomb.webp",
+    "url": "https://github.com/SuzanneOngCodes/Matlab-and-C-UofA/",
+    "category": "Project"
+  },
+  {
+    "name": "Hen House Project",
+    "technologies": ["Marketing"],
+    "date": "January 2021 · February 2021",
+    "description": {
+      "en": "In charged of constructing meeting minutes, research on information about the gender investment gap and present the team's findings and enlightening ideas to the client.",
+      "zh": "负责会议记录的整理，关于性别投资差距的信息调研，并向客户展示团队的发现和启发性的想法。"
+    },
+    "preview": "/assets/images/projects/henhouse.webp",
+    "image": "/assets/images/projects/HHP.webp",
+    "url": null,
+    "category": "Marketing"
+  }
+]

@@ -1,0 +1,77 @@
+---
+import experiences from "../collections/experiences.json";
+import AboutExperience from "../components/about-experience.astro";
+import PageHeading from "../components/page-heading.astro";
+import Layout from "./main.astro";
+import translations from "../locales/translations.ts";
+const currentLocale = Astro.currentLocale || 'zh';
+const contactStatement = translations[currentLocale].about.contact.split(/(\{0\}|\{1\})/g);
+---
+
+<Layout title={translations[currentLocale].about.title}>
+  <section class="relative z-20 max-w-2xl mx-auto my-12 px-7 lg:px-0">
+    <PageHeading
+      title={translations[currentLocale].about.title}
+      description={translations[currentLocale].about.description}
+    />
+
+    <picture>
+      <source srcset="/assets/images/about.webp" type="image/webp" />
+      <img src="/assets/images/about.webp" class="relative z-30 w-full my-10 rounded-xl" alt="Generated image from " loading="eager" decoding="auto"/>
+    </picture>
+
+    <h2 class="mb-2 text-2xl font-bold dark:text-neutral-200">{translations[currentLocale].about.shortBio}</h2>
+    <p
+      class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg"
+    >
+      {translations[currentLocale].about.bioText}
+    </p>
+
+    <h2
+      class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200"
+    >
+      {translations[currentLocale].workExperience}
+    </h2>
+    <div class="px-5 py-10">
+      {
+        experiences.map((experience) => {
+          return (
+            <div class="pb-10 border-l border-gray-200 last:border-l-0 dark:border-neutral-700">
+              <AboutExperience
+                dates={experience.dates}
+                role={experience.role[currentLocale]}
+                company={experience.company}
+                description={experience.description[currentLocale]}
+                logo={experience.logo}
+                url={experience.url}
+              />
+            </div>
+          )
+        })
+      }
+    </div>
+
+    <h2 class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200">{translations[currentLocale].about.connect}</h2>
+    <p
+      class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg"
+    >
+    {contactStatement.map((part: string) => {
+      if (part === '{0}') {
+        return (
+          <a href="https://github.com/SuzanneOngCodes" target="_blank" rel="noopener noreferrer" class="text-indigo-600 underline">
+            GitHub
+          </a>
+        );
+      }
+      if (part === '{1}') {
+        return (
+          <a href={`mailto:ongsuzanne9901@gmail.com`} class="text-indigo-600 underline">
+            {translations[currentLocale].about.email}
+          </a>
+        );
+      }
+      return part;
+    })}
+    </p>
+  </section>
+</Layout>

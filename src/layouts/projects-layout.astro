@@ -1,0 +1,29 @@
+---
+import projects from "../collections/projects.json";
+import PageHeading from "../components/page-heading.astro";
+import Project from "../components/project.astro";
+import Layout from "./main.astro";
+import translations from "../locales/translations.ts";
+const currentLocale = Astro.currentLocale || 'en';
+---
+
+<Layout title={translations[currentLocale].projects.title}>
+  <section class="relative z-20 max-w-2xl mx-auto my-12 px-7 lg:px-0">
+    <PageHeading
+      title={translations[currentLocale].projects.title}
+      description={translations[currentLocale].projects.description}
+    />
+
+    <div
+      class="z-50 grid items-stretch w-full grid-cols-1 my-8 gap-7 sm:gap-5 sm:grid-cols-2"
+    >
+      {
+        projects.map((project) => {
+          return (
+            <Project project={project} />
+          )
+        })
+      }
+    </div>
+  </section>
+</Layout>
