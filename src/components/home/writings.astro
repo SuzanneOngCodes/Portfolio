@@ -2,6 +2,7 @@
 import Button from "../button.astro";
 import PostsLoop from "../posts-loop.astro";
 import translations from "../../locales/translations";
+import pathOnLanguage from "../../utils";
 const currentLocale = Astro.currentLocale || 'en';
 ---
 
@@ -24,7 +25,7 @@ const currentLocale = Astro.currentLocale || 'en';
         <PostsLoop count="3" />
 
         <div class="flex items-center justify-center w-full py-5">
-          <Button text={translations[currentLocale].posts.viewAll} link="/posts" />
+          <Button text={translations[currentLocale].posts.viewAll} link={pathOnLanguage("/posts", currentLocale)} />
         </div>
       </div>
       <div class="w-full mt-10 md:w-1/3 md:mt-0">

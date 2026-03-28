@@ -1,9 +1,9 @@
 ---
 import menus from "../collections/menu.json";
 import translations from "../locales/translations.ts";
+import pathOnLanguage from "../utils";
 const locales = Object.keys(translations);
 const localeNames = Object.fromEntries(locales.map(locale => [locale, translations[locale].language]));
-const pathWithoutLocale = Astro.url.pathname.replace(/^\/(en|zh)(\/|$)/, '/');
 const currentLocale = Astro.currentLocale || 'en';
 const menuTranslations = {
   en: translations.en.nav,
@@ -72,7 +72,7 @@ const menuTranslations = {
             const translatedName = menuTranslations[currentLocale][menuKey] || menu.name;
             return (
               <a
-                href={`${currentLocale === 'en' ? '' : '/' + currentLocale}${menu.url}`}
+                href={pathOnLanguage(menu.url, currentLocale)}
                 class="relative flex items-center justify-center w-full px-3 py-2 font-medium tracking-wide text-center duration-200 ease-out sm:py-0 sm:mb-0 md:w-auto hover:text-neutral-900 dark:hover:text-white"
               >
                 {translatedName}
@@ -122,10 +122,9 @@ const menuTranslations = {
       </div>
       <div class="flex items-center space-x-2 mx-4">
         {locales.map((locale) => {
-          const href = locale === 'en' ? pathWithoutLocale : `/${locale}${pathWithoutLocale}`;
           return (
             <a
-              href={href}
+              href={pathOnLanguage(Astro.url.pathname, locale)}
               class={`px-2 text-sm rounded transition-colors ${
                 currentLocale === locale
                   ? 'bg-neutral-200 dark:bg-neutral-700 text-neutral-900 dark:text-neutral-100'

@@ -3,6 +3,7 @@ import projects from "../../collections/projects.json";
 import Button from "../button.astro";
 import Project from "../project.astro";
 import translations from "../../locales/translations.ts";
+import pathOnLanguage from "../../utils";
 const currentLocale = Astro.currentLocale || 'en';
 ---
 
@@ -28,6 +29,6 @@ const currentLocale = Astro.currentLocale || 'en';
   </div>
 
   <div class="flex items-center justify-center w-full py-5">
-    <Button text={translations[currentLocale].projects.viewAll} link="/projects" />
+    <Button text={translations[currentLocale].projects.viewAll} link={pathOnLanguage("/projects", currentLocale)} />
   </div>
 </section>

@@ -1,58 +1,58 @@
 [
-  {
-    "dates": "March 2023 · Present",
-    "role": {
-      "en": "R & D Engineer",
-      "zh": "研发工程师"
-    },
-    "company": "Keysight Technologies",
-    "description": {
-      "en": "Responsible for creating and maintaining desktop applications.",
-      "zh": "负责创建和维护桌面应用程序。"
-    },
-    "logo": "/assets/images/experiences/Keysight.webp",
-    "url": "https://www.keysight.com/"
-  },
-  {
-    "dates": "December 2021 · February 2023",
-    "role": {
-      "en": "Web Developer",
-      "zh": "网页开发者"
-    },
-    "company": "RAA",
-    "description": {
-      "en": "Gained industrial experience as a web developer and worked on enhancing exisitng services in app using Angular and TypeScript.",
-      "zh": "获得了作为网页开发者的工业经验，并在应用程序中使用Angular和TypeScript增强了现有服务。"
-    },
-    "logo": "/assets/images/experiences/RAA.webp",
-    "url": "https://www.raa.com.au/"
-  },
-  {
-    "dates": "January 2021 · December 2022",
-    "role": {
-      "en": "Microsoft Student Ambassador",
-      "zh": "微软学生大使"
-    },
-    "company": "Microsoft",
-    "description": {
-      "en": "Student project, involved in the raising awareness and development of Internet of Things applications through Microsoft Azure.",
-      "zh": "学生项目，通过Microsoft Azure参与物联网应用的宣传和开发。"
-    },
-    "logo": "/assets/images/experiences/MSA.webp",
-    "url": "https://aumsa.github.io/2021-MSA-content/"
-  },
-  {
-    "dates": "May 2020 · January 2021 ",
-    "role": {
-      "en": "Part-Time Tutor",
-      "zh": "兼职导师"
-    },
-    "company": "Learn Mate",
-    "description": {
-      "en": "Specialized in SACE Year 12 Accounting and Maths.",
-      "zh": "专注于SACE12年级会计和数学。"
-    },
-    "logo": "/assets/images/experiences/Learnmate.webp",
-    "url": "https://learnmate.com.au"
-  }
+	{
+		"dates": "March 2023 · Present",
+		"role": {
+			"en": "R & D Engineer",
+			"zh": "研发工程师"
+		},
+		"company": "Keysight Technologies",
+		"description": {
+			"en": "Responsible for creating and maintaining desktop applications.",
+			"zh": "负责创建和维护桌面应用程序。"
+		},
+		"logo": "/Portfolio/assets/images/experiences/Keysight.webp",
+		"url": "https://www.keysight.com/"
+	},
+	{
+		"dates": "December 2021 · February 2023",
+		"role": {
+			"en": "Web Developer",
+			"zh": "网页开发者"
+		},
+		"company": "RAA",
+		"description": {
+			"en": "Gained industrial experience as a web developer and worked on enhancing exisitng services in app using Angular and TypeScript.",
+			"zh": "获得了作为网页开发者的工业经验，并在应用程序中使用Angular和TypeScript增强了现有服务。"
+		},
+		"logo": "/Portfolio/assets/images/experiences/RAA.webp",
+		"url": "https://www.raa.com.au/"
+	},
+	{
+		"dates": "January 2021 · December 2022",
+		"role": {
+			"en": "Microsoft Student Ambassador",
+			"zh": "微软学生大使"
+		},
+		"company": "Microsoft",
+		"description": {
+			"en": "Student project, involved in the raising awareness and development of Internet of Things applications through Microsoft Azure.",
+			"zh": "学生项目，通过Microsoft Azure参与物联网应用的宣传和开发。"
+		},
+		"logo": "/Portfolio/assets/images/experiences/MSA.webp",
+		"url": "https://aumsa.github.io/2021-MSA-content/"
+	},
+	{
+		"dates": "May 2020 · January 2021 ",
+		"role": {
+			"en": "Part-Time Tutor",
+			"zh": "兼职导师"
+		},
+		"company": "Learn Mate",
+		"description": {
+			"en": "Specialized in SACE Year 12 Accounting and Maths.",
+			"zh": "专注于SACE12年级会计和数学。"
+		},
+		"logo": "/Portfolio/assets/images/experiences/Learnmate.webp",
+		"url": "https://learnmate.com.au"
+	}
 ]
