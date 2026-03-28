@@ -17,7 +17,4 @@ export default defineConfig({
 
 	site: "https://suzanneongcodes.github.io",
 	base: "/Portfolio",
-	build: {
-		assetsPrefix: "./",
-	},
 });

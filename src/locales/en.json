@@ -1,51 +1,45 @@
 {
-  "language": "EN",
-  "nav": {
-    "home": "Home",
-    "posts": "Posts",
-    "projects": "Projects",
-    "about": "About",
-    "day_mode": "Day Mode",
-    "night_mode": "Night Mode"
-  },
-  "home": {
-    "title": "Hello, I'm Suzanne.",
-    "subtitle": "I'm a full-stack software engineer living in Malaysia.",
-    "help": "I can help you out with:",
-    "skills": [
-      "Vue.js Development",
-      "React.js Development",
-      "Node.js Development",
-      "Website Design",
-      "and more..."
-    ],
-    "followMe": "Follow me on GitHub",
-    "projects": "Check out my projects",
-    "writing": "Some of my writing"
-  },
-  "about": {
-    "title": "About Me",
-    "description": "Hello 👋 I'm a full-stack software engineer from Malaysia. I'm passionate about building new products and learning new technology.",
-    "shortBio": "Short Bio",
-    "bioText": "Full-stack software engineer, always eager to learn and build innovative solutions.",
-    "experience": "Experience",
-    "connect": "Let's Connect",
-    "connectText": "If you want to stay up to date with my work be sure to follow me on twitter, or you can send me an email and I'll be sure to get back to you.",
-    "contact": "If you want to stay up to date with my work be sure to follow me on {0}, or you can contact me through {1}.",
-    "email": "email",
-    "buttonText": "Details"
-  },
-  "projects": {
-    "title": "My Projects",
-    "description": "Here are some of the current projects I've been working on. I really enjoy creating new projects and coming up with new ideas. I'm always working on something new, so check back often!",
-    "visitProject": "Visit Project",
-    "viewAll": "View All My Projects"
-  },
-  "posts": {
-    "title": "My Posts",
-    "description": "Dive into my musings on life and tech in my latest posts; a blend of introspection and innovation. Keep an eye out for fresh insights and updates!",
-    "summary": "Along with coding I also like to write about life and technology. Here are some of my recent posts.",
-    "viewAll": "View All My Posts"
-  },
-  "close": "Close"
+	"language": "EN",
+	"nav": {
+		"home": "Home",
+		"posts": "Posts",
+		"projects": "Projects",
+		"about": "About",
+		"day_mode": "Day Mode",
+		"night_mode": "Night Mode"
+	},
+	"home": {
+		"title": "Hello, I'm Suzanne.",
+		"subtitle": "I'm a full-stack software engineer living in Malaysia.",
+		"help": "I can help you out with:",
+		"skills": ["Desktop App Development", "Web Development", "Mobile App Development", "Vibe coding reviews", "and more..."],
+		"followMe": "Follow me on GitHub",
+		"projects": "Check out my projects",
+		"writing": "Some of my writing"
+	},
+	"about": {
+		"title": "About Me",
+		"description": "Hello 👋 I'm a full-stack software engineer from Malaysia. I'm passionate about building new products and learning new technology.",
+		"shortBio": "Short Bio",
+		"bioText": "Full-stack software engineer, always eager to learn and build innovative solutions.",
+		"experience": "Experience",
+		"connect": "Let's Connect",
+		"connectText": "If you want to stay up to date with my work be sure to follow me on twitter, or you can send me an email and I'll be sure to get back to you.",
+		"contact": "If you want to stay up to date with my work be sure to follow me on {0}, or you can contact me through {1}.",
+		"email": "email",
+		"buttonText": "Details"
+	},
+	"projects": {
+		"title": "My Projects",
+		"description": "Here are some of the current projects I've been working on. I really enjoy creating new projects and coming up with new ideas. I'm always working on something new, so check back often!",
+		"visitProject": "Visit Project",
+		"viewAll": "View All My Projects"
+	},
+	"posts": {
+		"title": "My Posts",
+		"description": "Dive into my musings on life and tech in my latest posts; a blend of introspection and innovation. Keep an eye out for fresh insights and updates!",
+		"summary": "Along with coding I also like to write about life and technology. Here are some of my recent posts.",
+		"viewAll": "View All My Posts"
+	},
+	"close": "Close"
 }
