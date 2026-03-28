@@ -36,6 +36,7 @@ const currentLocale = Astro.currentLocale || 'en';
         ))}
         </ul>
         <Button text={translations[currentLocale].home.followMe} link="https://github.com/SuzanneOngCodes" isExternalWebsite/>
+        <Button text={translations[currentLocale].home.resume} isExternalWebsite link="/Portfolio/assets/images/resume.pdf" />
       </div>
       <div
         class="relative justify-end hidden w-full mt-10 md:flex md:pl-10 md:w-1/2 md:mt-0 md:translate-y-4 xl:translate-y-0"
