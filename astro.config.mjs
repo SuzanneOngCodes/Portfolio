@@ -9,11 +9,16 @@ export default defineConfig({
 		routing: {
 			prefixDefaultLocale: false,
 		},
-		site: "https://suzanneongcodes.github.io",
-		base: "/Portfolio",
 	},
 
 	vite: {
 		plugins: [tailwindcss()],
 	},
+
+	site: "https://suzanneongcodes.github.io",
+	base: "/Portfolio",
+	build: {
+		assetsPrefix: "./",
+	},
+	trailingSlash: "never",
 });
