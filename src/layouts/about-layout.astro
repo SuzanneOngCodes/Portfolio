@@ -17,7 +17,7 @@ const contactStatement = translations[currentLocale].about.contact.split(/(\{0\}
 
     <picture>
       <source srcset="/assets/images/about.webp" type="image/webp" />
-      <img src="/assets/images/about.webp" class="relative z-30 w-full my-10 rounded-xl" alt="Generated image from " loading="eager" decoding="auto"/>
+      <img src="/assets/images/about.webp" class="relative z-30 w-full my-10 rounded-xl" alt="Generated from openai" loading="lazy" decoding="async"/>
     </picture>
 
     <h2 class="mb-2 text-2xl font-bold dark:text-neutral-200">{translations[currentLocale].about.shortBio}</h2>
@@ -30,7 +30,7 @@ const contactStatement = translations[currentLocale].about.contact.split(/(\{0\}
     <h2
       class="mt-5 mb-2 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200"
     >
-      {translations[currentLocale].workExperience}
+      {translations[currentLocale].about.experience}
     </h2>
     <div class="px-5 py-10">
       {

@@ -1,9 +1,8 @@
 import { defineConfig } from "astro/config";
-import tailwind from "@astrojs/tailwind";
+import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
-	integrations: [tailwind()],
 	i18n: {
 		defaultLocale: "en",
 		locales: ["en", "zh"],
@@ -12,5 +11,9 @@ export default defineConfig({
 		},
 		site: "https://suzanneongcodes.github.io",
 		base: "/Portfolio",
+	},
+
+	vite: {
+		plugins: [tailwindcss()],
 	},
 });
