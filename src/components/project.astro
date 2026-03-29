@@ -1,5 +1,6 @@
 ---
 import translations from "../locales/translations.ts";
+import { Image } from "astro:assets";
 const { project } = Astro.props;
 const technology = project.technologies.join(", ");
 const currentLocale = Astro.currentLocale || 'en';
@@ -16,7 +17,7 @@ const currentLocale = Astro.currentLocale || 'en';
     class="relative z-30 block duration-300 ease-out group-hover:-translate-x-1 group-hover:-translate-y-1"
   >
     <span class="block w-full">
-      <img src={project.preview} alt={project.name} class="w-full h-auto rounded-lg aspect-[16/9] object-fill" />
+      <Image src={project.preview} alt={project.name} class="w-full h-auto rounded-lg aspect-[16/9] object-fill" width={302} height={169} />
     </span>
     <span class="block w-full px-1 mt-5 mb-1 sm:mt-3">
       <span
@@ -73,7 +74,7 @@ window.showDialog = function (project) {
   const closeLabel = content.dataset.closeLabel;
   const description = project.description[content.dataset.currentLocale] || project.description['en'] || '';
   content.innerHTML = `
-      <img src="${project.image}" alt="${project.name}" class="w-full h-auto rounded-lg max-h-[30rem] object-fill mb-4" />
+      <Image src="${project.image}" alt="${project.name}" class="w-full h-auto rounded-lg max-h-[30rem] object-fill mb-4" width={483} height={302} />
       <h2 class="text-xl font-semibold text-neutral-900 dark:text-neutral-100 mb-2">${project.name}</h2>
       <p class="text-sm text-neutral-600 dark:text-neutral-400 mb-4">${description}</p>
       <div class="flex space-x-2 mb-4 justify-center">

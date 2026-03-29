@@ -4,6 +4,7 @@ import AboutExperience from "../components/about-experience.astro";
 import PageHeading from "../components/page-heading.astro";
 import Layout from "./main.astro";
 import translations from "../locales/translations.ts";
+import { Image } from "astro:assets";
 const currentLocale = Astro.currentLocale || 'zh';
 const contactStatement = translations[currentLocale].about.contact.split(/(\{0\}|\{1\})/g);
 ---
@@ -15,10 +16,7 @@ const contactStatement = translations[currentLocale].about.contact.split(/(\{0\}
       description={translations[currentLocale].about.description}
     />
 
-    <picture>
-      <source srcset="/Portfolio/assets/images/about.webp" type="image/webp" />
-      <img src="/Portfolio/assets/images/about.webp" class="relative z-30 w-full my-10 rounded-xl" alt="Generated from openai" loading="lazy" decoding="async"/>
-    </picture>
+    <Image src="/Portfolio/assets/images/about.webp" class="relative z-30 w-full my-10 rounded-xl" alt="Generated from openai" width={600} height={400}/>
 
     <h2 class="mb-2 text-2xl font-bold dark:text-neutral-200">{translations[currentLocale].about.shortBio}</h2>
     <p
